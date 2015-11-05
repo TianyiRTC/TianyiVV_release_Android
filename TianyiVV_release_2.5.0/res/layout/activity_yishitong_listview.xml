@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_yishitong_item_sel"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/yishitong_item_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_listview_title"
+        android:minHeight="20.0dp" >
+
+        <TextView
+            android:id="@+id/yishitong_item_title"
+            style="@style/setting_itmes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/yishitong_item_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/yishitong_item_img"
+            android:layout_width="50.0dp"
+            android:layout_height="50.0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="10.0dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/yishitong_item_starttime"
+            style="@style/setting_itmes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dp"
+            android:layout_toRightOf="@+id/yishitong_item_img"
+            tools:ignore="UselessLeaf" >
+
+            <TextView
+                android:id="@+id/yishitong_item_number"
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/yishitong_item_call_img"
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yishitong_item_number"
+                android:layout_marginTop="11.0dp"
+                android:background="@drawable/phone_list_item"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/yishitong_item_count"
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yishitong_item_number"
+                android:layout_marginLeft="5.0dp"
+                android:layout_marginTop="5.0dp"
+                android:layout_toRightOf="@+id/yishitong_item_call_img" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

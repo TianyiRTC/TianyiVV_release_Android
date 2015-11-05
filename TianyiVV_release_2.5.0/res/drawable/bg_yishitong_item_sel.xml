@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListItem选中背景色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <item android:drawable="@color/bg_search_root" android:state_pressed="true"></item> -->
+    <item android:drawable="@color/contact_sel_bg" android:state_pressed="true"></item>
+    <item android:drawable="@android:color/transparent"></item>
+
+</selector>

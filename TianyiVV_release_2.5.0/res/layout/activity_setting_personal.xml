@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <com.sip.rtcclient.ui.TitleViewTianyi
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewTianyi>
+
+    <ScrollView
+        android:id="@+id/personal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount" >
+
+        <LinearLayout
+            android:id="@+id/personal_linearlayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginTop="5.0dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/personal_rel01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="5.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_personal_avatar" />
+
+                <ImageView
+                    android:id="@+id/personal_photo"
+                    android:layout_width="50.0dp"
+                    android:layout_height="50.0dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_toLeftOf="@+id/personal_photo_arr"
+                    android:onClick="onAvatar"
+                    android:background="@drawable/call_video_default_avatar"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/personal_photo_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="onAvatar"
+                    android:background="@drawable/btn_arr_right"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" >
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/personal_rel02"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="5.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    android:id="@+id/personal_tel"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_personal_tel" />
+
+                <TextView
+                    android:id="@+id/personal_tel_number"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40.0dp"
+                    android:layout_toRightOf="@+id/personal_tel"
+                    android:text=""
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/personal_tel_status"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_toLeftOf="@+id/personal_tel_arr"
+                    android:text="@string/_personal_bind"
+                    android:onClick="onTelStatus"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/personal_tel_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="onTelStatus"
+                    android:background="@drawable/btn_arr_right"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/personal_rel03"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="5.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    android:id="@+id/personal_appid"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_personal_appid" />
+
+                <TextView
+                    android:id="@+id/personal_app_id"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40.0dp"
+                    android:layout_toLeftOf="@+id/personal_app_status"
+                    android:layout_toRightOf="@+id/personal_appid"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingRight="30dip"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text=""
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/personal_app_status"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_toLeftOf="@+id/personal_app_arr"
+                    android:onClick="onMailStatus"
+                    android:text="@string/_personal_bind"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/personal_app_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_arr_right"
+                    android:onClick="onMailStatus"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            
+            <RelativeLayout
+                android:id="@+id/personal_rel04"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="5.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    android:id="@+id/personal_tianyi"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_personal_tianyi" />
+
+                <TextView
+                    android:id="@+id/personal_tianyi_account"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_toRightOf="@+id/personal_tianyi"
+                    android:text=""
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/personal_tianyi_status"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_toLeftOf="@+id/personal_tianyi_arr"
+                    android:onClick="onTianyiStatus"
+                    android:text="@string/_personal_bind"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/personal_tianyi_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="onTianyiStatus"
+                    android:background="@drawable/btn_arr_right"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            
+            <RelativeLayout
+                android:id="@+id/personal_rel05"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="5.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    android:id="@+id/personal_weibo_sina"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_personal_weibo_sina" />
+
+                <TextView
+                    android:id="@+id/personal_weibo_sina_account"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_toRightOf="@+id/personal_weibo_sina"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/personal_weibo_sina_status"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2.0dp"
+                    android:layout_toLeftOf="@+id/personal_weibo_sina_arr"
+                    android:onClick="onSinaStatus"
+                    android:text="@string/_personal_unbind"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/personal_weibo_sina_arr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="onSinaStatus"
+                    android:background="@drawable/btn_arr_right"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

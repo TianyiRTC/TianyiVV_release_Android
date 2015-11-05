@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_title"
+    android:padding="0dip" >
+    <!-- android:background="@drawable/tab_bg" -->
+    <!-- tab_bg 是导航菜单栏的背景,根据需要修改 -->
+
+	<!-- 左侧滑动图标 -->
+    <ImageView
+        android:id="@+id/navigation_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_arr_left"
+         android:clickable="true"
+        android:focusable="true"
+        android:padding="0dip"
+        tools:ignore="ContentDescription" >
+    </ImageView>
+
+    <!-- 右侧滑动图标 -->
+    <ImageView
+        android:id="@+id/navigation_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_arr_right"
+         android:clickable="true"
+        android:focusable="true"
+        android:padding="0dip"
+        tools:ignore="ContentDescription" >
+    </ImageView>
+
+    <HorizontalScrollView
+        android:id="@+id/navigation_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/navigation_right"
+        android:layout_toRightOf="@+id/navigation_left"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/navigation_llPlayback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <GridView
+                android:id="@+id/navigation_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@null" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

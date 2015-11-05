@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sip.rtcclientouter"
+    android:installLocation="internalOnly"
+    android:versionCode="12"
+    android:versionName="2.5.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.STOP_APP_SWITCHES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.DEVICE_POWER"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application
+        android:name="com.sip.rtcclient.MyApplication"
+        android:enabled="true"
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:persistent="true" >
+
+        <!-- android:name=".activity.WelcomeActivity DemoApp" -->
+        <activity
+            android:name="com.sip.rtcclient.activity.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="cn.com.chinatelecom.account.lib.ct.DownloadApkActivity" >
+        </activity>
+        <activity
+            android:name="com.sip.rtcclient.activity.group.CheckGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" >
+        </activity>
+        <activity
+            android:name="com.sip.rtcclient.activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.CallActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+             android:theme="@style/Main"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter >
+                <action
+                    android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sip.rtcclient.activity.calling.CallingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.calling.CallingShowActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.calling.CallingMultiChatActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.calling.CallingMultiSpeakActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.calling.CallingTVActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.calling.CallingVideoConfActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.CallRecordActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.sip.rtcclient.activity.EditContactActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.sip.rtcclient.activity.AddAddressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.sip.rtcclient.activity.AddWeiboActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.sip.rtcclient.activity.ContactCallDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.sip.rtcclient.activity.ContactDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.sip.rtcclient.activity.ContactActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.SettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.person.PersonalActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.person.PersonalTelActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.person.PersonTelChangeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.person.PersonTelBindActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.person.PersonalMailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.person.PersonalTianyiActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.person.PersonalSinaActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.FriendAddActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.CallSettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.AboutActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.CheckUpdateActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.group.GroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.group.GroupDeleteMoreActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.group.MemberAddToGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.group.AddToGroupActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.group.GroupCreateActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.group.SelectContactActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+        <activity
+            android:name="com.sip.rtcclient.activity.group.SelectGroupMembersActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+
+        <!--
+         <activity
+            android:configChanges="keyboardHidden|orientation"
+        	 android:name=".activity.CallActivity"
+            android:theme="@style/Main"
+            android:screenOrientation="portrait" />
+        -->
+        <activity
+            android:name="com.sip.rtcclient.activity.CallingVideoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Main" />
+
+        <receiver android:name="com.sip.rtcclient.services.BootReceiver" >
+            <intent-filter > <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+       
+        <service
+            android:name="com.sip.rtcclient.services.RestartService"/>
+        <service
+            android:name="com.sip.rtcclient.services.ReloginService"
+            android:enabled="true"
+            android:persistent="true" />
+        <!-- sdk's remote service -->
+
+        <service android:name="rtc.sdk.impl.SdkService" android:exported="false" >
+            <intent-filter>
+                <action android:name="rtc.sdk.service" />
+            </intent-filter>
+        </service>
+        <!--
+        <receiver android:name=".services.TelephoneBroadcastReceiver" >
+            <intent-filter android:priority="1" >
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        -->
+         <!-- 
+        <activity android:name="cn.com.chinatelecom.account.lib.ct.DownloadApkActivity"></activity>
+        <activity android:name="cn.com.chinatelecom.account.lib.ct.OAuthWebviewActivity"></activity>
+         --> 
+    </application>
+
+</manifest>

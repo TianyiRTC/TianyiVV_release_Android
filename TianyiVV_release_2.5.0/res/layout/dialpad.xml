@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.sip.rtcclient.ui.ButtonGridVideoLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpad"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/call_record_dial_bg"
+    android:layout_weight="1"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp" >
+
+    <ImageButton
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_1_no_vm" />
+
+    <ImageButton
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_2" />
+
+    <ImageButton
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_3" />
+
+    <ImageButton
+        android:id="@+id/four"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_4" />
+
+    <ImageButton
+        android:id="@+id/five"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_5" />
+
+    <ImageButton
+        android:id="@+id/six"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_6" />
+
+    <ImageButton
+        android:id="@+id/seven"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_7" />
+
+    <ImageButton
+        android:id="@+id/eight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_8" />
+
+    <ImageButton
+        android:id="@+id/nine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_9" />
+
+    <ImageButton
+        android:id="@+id/star"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_star" />
+
+    <ImageButton
+        android:id="@+id/zero"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_0" />
+
+    <ImageButton
+        android:id="@+id/pound"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_dial_bg"
+        android:src="@drawable/dial_num_pound" />
+
+</com.sip.rtcclient.ui.ButtonGridVideoLayout>

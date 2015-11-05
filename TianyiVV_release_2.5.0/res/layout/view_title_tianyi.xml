@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:background="@color/bg_title"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/ImgBtn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dp"
+            android:background="@drawable/btn_arr_left"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3.0dp"
+            android:layout_toRightOf="@+id/ImgBtn_left"
+            android:textColor="@color/black"
+            android:textSize="18.0dp" />
+        
+        <TextView 
+            android:id="@+id/tv_right"
+            style="@style/calling_bottom_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dp"
+            android:textColor="@color/group_create_tv"/>
+
+        <ImageView
+            android:id="@+id/ImgBtn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dp"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+    
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:background="@color/black"
+        tools:ignore="ContentDescription" >
+    </ImageView>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <com.sip.rtcclient.ui.TitleViewTianyi
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewTianyi>
+
+    <ScrollView
+        android:id="@+id/personal_tel_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount" >
+
+        <LinearLayout
+            android:id="@+id/personal_tel_linearlayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginTop="10.0dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/personal_tel_rel01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:onClick="onChangeTel"
+                android:background="@drawable/btn_white" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="修改电话号码" />
+
+            </RelativeLayout>
+			
+            
+            <RelativeLayout
+                android:id="@+id/personal_tel_rel02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="10.0dp"
+                android:onClick="onBindTel"
+                android:background="@drawable/btn_white" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="绑定电话号码" />
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/personal_tel_rel03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:onClick="onDelTel"
+                android:background="@drawable/btn_white" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="删除电话号码" />
+
+            </RelativeLayout>
+           
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

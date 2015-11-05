@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="audiocodecs">
+        <item>ilbc</item>
+        <item>opus</item>
+    </string-array>
+    <string-array name="videocodecs">
+        <item>vp8</item>
+        <item>h264</item>
+    </string-array>
+    <string-array name="videoformat">
+        <item>标清</item>
+        <item>流畅</item>
+        <item>高清</item>
+    </string-array>
+    <string-array name="conftype">
+        <item>0:多人会话群聊</item>
+        <item>1:多人会话对讲</item>
+        <item>2:多人两方语音</item>
+        <item>3:微直播</item>
+    </string-array>
+    <string-array name="uetype">
+        <item>0:TV</item>
+        <item>1:Phone</item>
+        <item>2:PC</item>
+        <item>3:Browser</item>
+        <item>4:Pad</item>
+        <item>5:Other</item>
+    </string-array>
+
+</resources>

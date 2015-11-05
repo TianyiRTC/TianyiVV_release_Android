@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_yishitong_item_sel"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="50.0dp"
+            android:layout_height="50.0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="10.0dp"
+            android:src="@drawable/call_video_default_avatar" >
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dp"
+            android:layout_toRightOf="@+id/img_avatar"
+            tools:ignore="UselessLeaf" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

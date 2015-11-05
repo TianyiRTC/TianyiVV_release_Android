@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">天翼  V V</string>
+    <string name="intent_key_object">object</string>
+
+    <!-- 异常 -->
+    <string name="exception_file_not_found">文件未找到</string>
+    <string name="exception_io">文件读写出错</string>
+    <string name="exception_json">JSON文件解析出错</string>
+    <string name="exception_drop_table">数据库表删除操作出错</string>
+    <string name="exception_screen_ensity">屏幕分辨率获取出错</string>
+    <string name="exception_ipaddress">IP地址获取出错</string>
+    <string name="exception_open_log_file">日志文件打开出错</string>
+    <string name="exception_write_log_file">日志文件写入出错</string>
+    <string name="exception_close_log_file">日志文件关闭出错</string>
+    <string name="exception_clear_thread">工作线程释放出错</string>
+    <string name="exception_image_download">图片下载出错</string>
+    <string name="exception_parse_data">日期转换出错</string>
+    <string name="exception_serialnumber">设备序列号获取出错</string>
+    <string name="exception_newwork_connect_check">网络状态判断出错</string>
+    <string name="exception_http">Http请求过程出错</string>
+    <string name="exception_unsupported_encoding">字符编码出错</string>
+    <string name="exception_ip_address">设备IP获取出错</string>
+
+    <!-- 错误 -->
+    <string name="error_app">系统主应用出现错误</string>
+    <string name="error_navigation_item_size">动态导航菜单数量出错</string>
+    <string name="error_out_of_memory">内存溢出</string>
+    <string name="net_connect_error">无网络连接，请检查网络</string>
+    <string name="http_error">网络异常</string>
+    <string name="send_error">输入内容有误</string>
+    <string name="json_error">未获取到数据</string>
+    <string name="sql_error">数据库操作异常</string>
+    <string name="no_login_error">应用还没有用户登陆过</string>
+    <string name="receive_null">接收内容空</string>
+    <string name="receive_error">接收内容错误</string>
+
+    <!-- 提示 -->
+    <string name="info_no_net">无网络连接</string>
+    <string name="info_title">提示</string>
+    <string name="info_exit_msg">确定要退出吗?</string>
+    <string name="info_btn_ok">确定</string>
+    <string name="info_btn_cancel">取消</string>
+    <string name="str_today">今天</string>
+    <string name="str_tomorrow">明天</string>
+
+    <!-- 上传、下载 -->
+    <string name="file_upload_success">文件上传成功</string>
+    <string name="file_upload_fail">文件上传失败</string>
+
+    <!-- 标题 -->
+    <string name="title_yishitong">会话</string>
+    <string name="title_contact">联系人</string>
+    <string name="title_group">群组</string>
+    <string name="title_setting">设置</string>
+    <string name="title_add_address">添加通讯录好友</string>
+    <string name="title_add_weibo">添加新浪微博好友</string>
+    <string name="title_add_to_group">添加到分组 </string>
+    <string name="title_edit_contact">批量删除 </string>
+
+    <!-- Sip Demo -->
+    <string name="_activity_contact_tv_account">帐号</string>
+    <string name="_activity_contact_tv_pw">密码</string>
+    <string name="_activity_contact_tv_ip">IP</string>
+    <string name="_activity_contact_tv_port">端口</string>
+    <string name="_activity_contact_tv_call_num">号码</string>
+    <string name="_activity_contact_tv_call_frames">帧数</string>
+    <string name="_activity_contact_btnframes_save">保存</string>
+    <string name="_activity_contact_btn_call_audio">拨号(音频)</string>
+    <string name="_activity_contact_btn_call_video">拨号(视频)</string>
+    <string name="_activity_contact_btn_call_accept">接听</string>
+    <string name="_activity_contact_btn_call_hangup">挂断</string>
+    <string name="_activity_contact_btn_call_login">登          录</string>
+    <string name="_activity_contact_btn_call_exit">注           销</string>
+    <string name="_activity_contact_tv_audiocodec">音频编码:  </string>
+    <string name="_activity_contact_tv_videocodec">视频编码:  </string>
+    <string name="_activity_contact_tv_call_vformat">视频格式:  </string>
+    <!-- 呼叫 -->
+    <string name="mute">静音</string>
+    <string name="call_video_connection_tip">正在与name建立视频通话...</string>
+    <string name="keyboard">键盘</string>
+    <string name="to_video">切换视频</string>
+    <string name="blind">盲转</string>
+    <string name="btn_end_call">结束通话</string>
+    <string name="call_transfer">呼叫转移</string>
+    <string name="handsfree">免提</string>
+    <string name="hold_call">保持呼叫</string>
+
+    <!-- Notify -->
+    <string name="info_online">Sip服务登录成功</string>
+    <string name="info_phone_not_answer">您有一个未接电话</string>
+    <string name="info_phone_not_answer_one">您有</string>
+    <string name="info_phone_not_answer_two">个未接电话</string>
+    <string name="info_on_the_phone">当前正在通话中，请通话结束后查看</string>
+
+    <!-- callactivity -->
+    <string name="reg_success">注册成功</string>
+    <string name="reg_fail">注册失败</string>
+
+    <!-- 设置 -->
+    <string name="_setting_person">个人资料</string>
+    <string name="_setting_add_friend">添加好友</string>
+    <string name="_setting_call">通话设置</string>
+    <string name="_setting_about">关于天翼VV</string>
+    <string name="_setting_check_update">检查更新</string>
+    <string name="_setting_switch_srtp">支持呼叫浏览器</string>
+    <string name="_setting_switch_rtp">支持多人会话</string>
+    <string name="_setting_upload">上传日志</string>
+
+    <!-- 个人资料 -->
+    <string name="_personal_bind">已绑定</string>
+    <string name="_personal_unbind">未绑定</string>
+    <string name="_personal_avatar">头像</string>
+    <string name="_personal_tel">电话</string>
+    <string name="_personal_appid">应用</string>
+    <string name="_personal_tianyi">天翼帐号</string>
+    <string name="_personal_weibo_sina">新浪微博</string>
+    <string name="_personal_avatar_camer">拍照</string>
+    <string name="_personal_avatar_local">从本地相册选择</string>
+    <string name="_personal_avatar_cancel">取消</string>
+
+    <!-- 添加好友 -->
+    <string name="_call_add_phonebook_auto">自动添加通讯录好友</string>
+    <string name="_call_add_phonebook">添加通讯录好友</string>
+    <string name="_call_add_weibo_sina">添加微博好友</string>
+    <string name="_call_add_vv_friend">添加天翼好友</string>
+    <!-- 电话号码 -->
+    <string name="_personal_setting_tel">电话号码</string>
+    <string name="_personal_setting_tel_change">修改电话号码</string>
+    <string name="_personal_setting_tel_bind">绑定电话号码</string>
+    <string name="_personal_tel_change_tip">修改电话号码同时会影响通讯录信息</string>
+    <string name="_personal_tel_bind_tip">绑定电话号码同时会绑定通讯录信息</string>
+
+    <!-- 通话设置 -->
+    <string name="_call_refuse_stanger">自动拒接陌生人来电</string>
+    <string name="_call_refuse_stanger_group">自动拒接陌生分组人来电</string>
+    <string name="_call_used_opengl">是否使用OpenGL</string>
+    <string name="_call_audio_code">音频编码:</string>
+    <string name="_call_video_code">视频编码:</string>
+    <string name="_call_video_format">采样格式:</string>
+    <string name="_call_video_framate">采样帧数:</string>
+
+    <!-- 会话 -->
+    <string name="_yishitong_search_txt">"手机号/姓名"</string>
+    <string name="_yishitong_search_dispad_txt">请输入号码</string>
+
+    <!-- 通话详情 -->
+    <string name="_contact_detail_call_title">通话详情</string>
+    <string name="_contact_detail_call_audio">音频通话</string>
+    <string name="_contact_detail_call_viodeo">视频通话</string>
+    <string name="add">添加</string>
+    <string name="apply">邀请</string>
+
+    <!-- 联系人页面上下文菜单 -->
+    <string name="menu_look_info">查看联系人</string>
+    <string name="menu_add_group">添加到群组</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_shield">屏蔽</string>
+    <string name="menu_deletes">批量删除</string>
+    <string name="dialog_delete_contact_message">删除联系人，关联和资料？\n（不会删除通讯录里的联系人）</string>
+
+    <!-- 呼叫 -->
+    <string name="_calling_number_null">呼叫号码为空号</string>
+    <string name="_calling_cannot_dial_self">无法呼叫自己的分机号</string>
+    <string name="_calling_invite">呼叫邀请中</string>
+    <string name="_calling">正在通话中</string>
+    <string name="_calling_accept">接受</string>
+    <string name="_calling_refused">拒绝</string>
+    <string name="_calling_end">结束通话</string>
+    <string name="tips_saveprocess">正在保存...</string>
+    <string name="tips_loadprocess">正在加载...</string>
+    <string name="tips_send">正在发送...</string>
+    <string name="tips_saveok">保存成功</string>
+    <string name="tips_saveerror">保存失败</string>
+    <string name="tips_loginprocess">正在登录，请稍候 ...</string>
+    <string name="tips_login_fail">登录失败</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="processing">数据处理中...</string>
+    <string name="net_cannot_use">网络连接不可用,请检查网络设置</string>
+    <string name="net_cannot_login">网络连接不可用,请检查网络设置</string>
+    <string name="unLogin">尚未登录,请从设置中退出,重新打开应用</string>
+    <string name="userlogin_error">用户名或密码不正确</string>
+    <string name="_calling_mute">静音</string>
+    <string name="_calling_hangup">结束</string>
+    <string name="_calling_exit">退出</string>
+    <string name="_calling_speaker">扬声器</string>
+    <string name="login_tips">天翼VV 中国好视听</string>
+    <string name="login_tianyi">天翼帐号</string>
+    <string name="login_weibo">新浪微博</string>
+    <string name="_call_record_del">删除通话记录</string>
+    <string name="_call_group_record_del">删除群组通话记录</string>
+    <string name="_activity_group_none">暂无群组信息</string>
+    <string name="_activity_group_add_member_to_group_none">暂无可添加此联系人的群组</string>
+    <string name="dialog_exit">您确定要退出程序吗？</string>
+    <string name="dialog_kickoff">您已被踢下线</string>
+
+    <!-- 分组 -->
+    <string name="_group_create_title">创建群组</string>
+    <string name="_group_my_create">我创建的群组</string>
+    <string name="_group_my_join">我加入的群组</string>
+    <string name="_group_create">创建</string>
+    <string name="_group_create_ok">确定</string>
+    <string name="_group_create_name">新的分组</string>
+    <string name="_group_create_name_hint">请输入群组名称</string>
+    <string name="_group_create_sel_members_add">添加联系人</string>
+    <string name="_group_create_sel_members_add_continue">继续添加</string>
+    <string name="_group_create_sel_members_title">选择联系人</string>
+    <string name="_group_create_sel_members_none">暂无联系人信息</string>
+    <string name="_group_item_look">查看群组</string>
+    <string name="_group_item_delete">删除群组</string>
+    <string name="_group_item_shield">屏蔽群组</string>
+    <string name="_group_item_shield_cancel">取消屏蔽</string>
+    <string name="_group_item_delete_more">批量删除</string>
+    <string name="_group_add_member_to_group">添加到群组</string>
+    <string name="_group_more_delete_all">全选</string>
+    <string name="_group_more_delete_create">(创建)</string>
+    <string name="_group_more_delete_join">(参加)</string>
+    <string name="_group_more_delete_ok">删除</string>
+    <string name="_group_more_delete_cancel">取消</string>
+    <string name="_group_more_delete_tip">您确定要删除所选分组?</string>
+    <string name="_group_item_shield_success">已屏蔽</string>
+    <string name="vv_type_multichat">聊天室</string>
+    <string name="vv_type_multispeak">群对讲</string>
+    <string name="vv_show_name">VV秀场</string>
+    <string name="vv_type_videoconf">视频会议</string>
+    <string name="vv_show_call">呼叫中...</string>
+    <string name="vv_show_call_end">结束呼叫</string>
+    <string name="vv_show_call_invitation">呼叫邀请中</string>
+    <string name="vv_show_call_hangup_tip">您结束了呼叫</string>
+    <string name="vv_show_call_refuse">您拒绝了邀请</string>
+    <string name="vv_show_call_onhangup_tip">您结束了通话</string>
+    <string name="vv_show_call_kicked_out">您被主持人退出</string>
+    <string name="vv_show_call_exit">您退出了通话</string>
+    <string name="vv_show_calling">正在通话中</string>
+    <string name="vv_show_call_microphone_tip">您可以把话筒分配给他人</string>
+    <string name="vv_show_call_speak_tip">您可以讲话了</string>
+    <string name="vv_show_call_add_speaker">增加发言权</string>
+    <string name="vv_show_call_release_speaker">回收发言权</string>
+    <string name="_group_creator">群组创建者</string>
+    <string name="vv_show_call_speak_give_up">您确定要放弃发言权？</string>
+    <string name="intercom_name">群对讲</string>
+    <string name="intercom_hangup">您退出了通话</string>
+    <string name="intercom_members_speaking">在讲话中</string>
+    <string name="intercom_members_can_speak">按下请讲话</string>
+    <string name="intercom_members_is_speaking">松开结束讲话</string>
+    <string name="chat_room_name">聊天室</string>
+    <string name="tv_name">现场直播</string>
+    <string name="tv_calling_exit">您退出了直播</string>
+    <string name="tv_calling_hangup">您结束了直播</string>
+    <string name="tv_calling_finish">直播结束</string>
+    <string name="tv_conftype">会议类型</string>
+    <string name="intercom_rob_mic">抢麦</string>
+    <string name="intercom_release_mic">释放麦克</string>
+    <string name="intercom_mic_release">您确定要释放麦克？</string>
+    <string name="about_sdk_version">SDK版本号:</string>
+    <string name="about_vv_version">VV:</string>
+    <string name="about_use_notes">"使用须知:\n
+1:LOG路径：SD卡/VV/log/xxx.log\n
+2:视频图像有绿条时，可通过通话设置关闭OpenGL\n
+3:开启扬声器距离很近时会啸叫\n
+4:登录时提示9003原因：网络问题或系统时间不准"</string>
+
+    <!--  -->
+    <string name="tag_key_contact_id">contactid</string>
+    <string name="tag_key_contact_object">object</string>
+    <string name="weibosdk_demo_toast_obtain_code_success">获取 Code 成功</string>
+    <string name="weibosdk_demo_toast_obtain_code_failed">获取 Code 失败</string>
+    <string name="weibosdk_demo_toast_obtain_token_success">获取 Token 成功</string>
+    <string name="weibosdk_demo_toast_obtain_token_failed">获取 Token 失败</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_token_to_string_format">Token：%1$s \nRefresh Token：%2$s \nexpires_in：%3$s</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="apk_not_exists">程序安装包不存在</string>
+    <string name="app_downloading">正在下载中</string>
+</resources>
