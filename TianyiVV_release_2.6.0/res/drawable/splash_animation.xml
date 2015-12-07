@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list       
+    xmlns:android="http://schemas.android.com/apk/res/android"     
+    android:oneshot="false">  
+
+	<!--动画帧对象 android:duration表示每帧动画显示的时间,放在drawable下的动画图片不能太大,否则会内存爆掉-->    
+	<item android:drawable="@drawable/splash01" android:duration="100"/>      
+	<item android:drawable="@drawable/splash02" android:duration="100"/>      
+	<item android:drawable="@drawable/splash03" android:duration="100"/>      
+	<item android:drawable="@drawable/splash04" android:duration="100"/>      
+	<item android:drawable="@drawable/splash05" android:duration="100"/>      
+	<item android:drawable="@drawable/splash06" android:duration="100"/>
+	   
+</animation-list>

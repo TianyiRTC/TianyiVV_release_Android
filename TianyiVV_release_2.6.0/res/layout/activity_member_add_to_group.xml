@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/activity_bg" >
+
+    <com.sip.rtcclient.ui.TitleViewTianyi
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewTianyi>
+
+    <RelativeLayout
+        android:id="@+id/activity_group_more_cb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_below="@+id/titleView"
+        android:background="@color/bg_listview_title"
+        android:onClick="onCheckChanged" >
+
+        <CheckBox
+            android:id="@+id/activity_group_more_cb_layout_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dp"
+            android:button="@drawable/cb_contact"
+            android:gravity="center_vertical" />
+
+        <TextView
+            style="@style/style_group_more_delete_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/activity_group_more_cb_layout_cb"
+            android:text="@string/_group_more_delete_all"
+            android:textColor="@color/group_create_tv" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_group_more_bottom"
+        android:layout_below="@+id/activity_group_more_cb_layout" >
+
+        <ListView
+            android:id="@+id/activity_group_more_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/yishitong_listview_divider"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:scrollbars="none"
+            tools:ignore="NestedScrolling" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/activity_group_more_none"
+            style="@style/setting_itmes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140.0dp"
+            android:text="@string/_activity_group_add_member_to_group_none"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_group_more_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/calling_bottom_bg"
+        android:onClick="onAdd"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                style="@style/calling_bottom_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_group_create_ok"
+                android:textColor="@color/calling_bottom_tv" />
+
+            <TextView
+                android:id="@+id/activity_group_more_bottom_count"
+                style="@style/calling_bottom_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/calling_bottom_tv" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

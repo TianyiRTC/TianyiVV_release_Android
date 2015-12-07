@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="status:" />
+
+            <EditText
+                android:id="@+id/ed_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bt_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnAcc"
+                android:text="帐号" />
+
+            <EditText
+                android:id="@+id/ed_user"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/ed_pwd"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="123" />
+
+            <EditText
+                android:id="@+id/ed_realm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="*" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_sip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:onClick="onBtnSip"
+                android:text="Sip" />
+
+            <Button
+                android:id="@+id/bt_tr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="onBtnTr"
+                android:text="tcp" />
+
+            <EditText
+                android:id="@+id/ed_svr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/bt_tr"
+                android:layout_toRightOf="@+id/bt_sip"
+                android:ems="10" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bt_remote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnRemote"
+                android:text="被叫" />
+
+            <Button
+                android:id="@+id/bt_calltype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnCallType"
+                android:text="A" />
+
+            <EditText
+                android:id="@+id/ed_remoteuri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bt_ice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnIce"
+                android:text="ice1" />
+
+            <Button
+                android:id="@+id/bt_init"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnInit"
+                android:text="Init" />
+
+            <Button
+                android:id="@+id/bt_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnLogin"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/bt_Call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnCall"
+                android:text="Call" />
+
+            <Button
+                android:id="@+id/bt_hangup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnHangup"
+                android:text="Hangup" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bt_grpvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnGrpVoice_create"
+                android:text="grpv_create" />
+
+            <Button
+                android:id="@+id/bt_grpvoice_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnGrpVoice_Accept"
+                android:text="grpv_accept" />
+
+            <Button
+                android:id="@+id/bt_grpvoice_Hangup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnGrpV_Hangup"
+                android:text="grpv_Hangup" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bt_grpvoice_GetMemberList"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:onClick="onBtnGrpV_GMemList"
+                android:text="gv_GetMemList" />
+
+            <Button
+                android:id="@+id/bt_grpvoice_GetMemberList"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:onClick="onBtnGrpV_InvitedMemberList"
+                android:text="gv_InvMemList" />
+
+            <Button
+                android:id="@+id/bt_grpvoice_KickMemberList"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:onClick="onBtnGrpV_kickMemberList"
+                android:text="gv_kickMemList" />
+
+            <Button
+                android:id="@+id/bt_grpvoice_CloseGrpv"
+                android:layout_width="52dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30"
+                android:onClick="onBtnGrpV_CloseGrpv"
+                android:text="gv_CloseGrpv" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bt_grpvoice_grapmic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnGrpV_Mute"
+                android:text="gv_mute" />
+
+            <Button
+                android:id="@+id/bt_grpvoice_grapmic"
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:onClick="onBtnGrpV_UnMute"
+                android:text="gv_unmute" />
+
+            <Button
+                android:id="@+id/bt_grpvoice_grapmic"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnGrpV_GrapMic"
+                android:text="gv_GrapMic"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bt_grpvoice_realmic"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnGrpV_RealMic"
+                android:text="gv_RealMic"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/bt_micl_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnMicL_Create"
+                android:text="ml_create" />
+
+            <Button
+                android:id="@+id/bt_micl_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnMicL_Delete"
+                android:text="ml_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_local"
+                android:layout_width="144dp"
+                android:layout_height="176dp" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_remote"
+                android:layout_width="144dp"
+                android:layout_height="176dp" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

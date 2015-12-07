@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/call_video_handsfree_n" android:state_checked="true" android:state_enabled="true"/>
+    <item android:drawable="@drawable/call_video_handsfree_s" android:state_checked="false" android:state_enabled="true"/>
+
+</selector>

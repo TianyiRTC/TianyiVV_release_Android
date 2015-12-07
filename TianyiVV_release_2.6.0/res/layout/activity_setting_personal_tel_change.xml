@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <com.sip.rtcclient.ui.TitleViewTianyi
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewTianyi>
+
+    <ScrollView
+        android:id="@+id/personal_tel_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount" >
+
+        <LinearLayout
+            android:id="@+id/personal_tel_change_linearlayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginTop="20.0dp"
+            android:orientation="vertical" >
+            
+            <EditText
+                android:id="@+id/personal_tel_change_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                tools:ignore="TextFields" />
+
+            <TextView
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:text="@string/_personal_tel_change_tip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

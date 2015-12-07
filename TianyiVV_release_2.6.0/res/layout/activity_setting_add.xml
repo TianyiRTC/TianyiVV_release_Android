@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <com.sip.rtcclient.ui.TitleViewTianyi
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewTianyi>
+
+    <ScrollView
+        android:id="@+id/add_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount" >
+
+        <LinearLayout
+            android:id="@+id/add_linearlayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginTop="10.0dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/add_rel01"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="8.0dp"
+                android:layout_marginTop="5.0dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_add_phonebook_auto" />
+
+                <CheckBox
+                    android:id="@+id/add_phonebook_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_select_check"
+                    android:button="@null"
+                    android:checked="false"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="2dip"
+                android:onClick="onAddPhoneFriend"
+                android:text="@string/_call_add_phonebook" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+
+             <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="2dip"
+                android:onClick="onAddAccFriend"
+                android:text="@string/_call_add_vv_friend" 
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/add_rel02"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="5.0dp"
+                android:onClick="onAddPhoneBookFriend"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_add_phonebook" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/add_rel03"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="5.0dp"
+                android:onClick="onAddAccFriend"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_add_weibo_sina" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

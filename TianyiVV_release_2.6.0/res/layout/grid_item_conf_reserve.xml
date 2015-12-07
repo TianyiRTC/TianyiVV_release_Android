@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/conf_reserve_person_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_person"
+        android:orientation="vertical"
+        tools:ignore="UselessParent,UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@+id/conf_reserve_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5.0dp"
+            android:background="@drawable/user_metting_add_online"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/conf_reserve_item_name_tv"
+            style="@style/style_group_create_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5.0dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/conf_reserve_item_add_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/btn_phone_book_add"
+        android:visibility="gone" />
+
+</RelativeLayout>

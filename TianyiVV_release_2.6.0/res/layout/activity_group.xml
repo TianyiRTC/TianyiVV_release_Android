@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg" >
+
+    <com.sip.rtcclient.ui.TitleViewSimple
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewSimple>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleView" >
+
+        <ListView
+            android:id="@+id/activity_group_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/yishitong_listview_divider"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:scrollbars="none"
+            tools:ignore="NestedScrolling" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/activity_group_none"
+            style="@style/setting_itmes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140.0dp"
+            android:text="@string/_activity_group_none"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

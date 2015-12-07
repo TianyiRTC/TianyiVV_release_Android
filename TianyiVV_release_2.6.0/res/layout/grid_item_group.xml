@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sip.rtcclientouter"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_yishitong_item_sel" >
+
+    <RelativeLayout
+        android:id="@+id/group_item_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_listview_title" >
+
+        <TextView
+            android:id="@+id/group_item_type_txt"
+            style="@style/style_group_list_item_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10.0dp"
+            android:paddingBottom="5.0dp"
+            android:paddingTop="5.0dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10.0dp"
+        android:layout_below="@+id/group_item_type_layout"
+        android:background="@drawable/bg_yishitong_item_sel">
+        
+        <CheckBox
+            android:id="@+id/group_item_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/cb_contact"
+            android:gravity="center_vertical"
+            android:visibility="gone"/>
+
+        <com.sip.rtcclient.ui.RoundAngleImageView
+            android:id="@+id/group_item_img"
+            android:layout_width="60.0dp"
+            android:layout_height="60.0dp"
+            android:layout_toRightOf="@+id/group_item_cb"
+            android:background="@color/lightgray"
+            android:src="@drawable/group_create"
+            app:roundWidth="5.0dp" 
+			app:roundHeight="5.0dp" />
+        
+        <TextView
+            android:id="@+id/group_item_more_name"
+            style="@style/style_group_list_item_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_toRightOf="@+id/group_item_img"
+            android:layout_marginLeft="10.0dp"
+            android:singleLine="true"
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/group_item_more_type"
+            style="@style/style_group_list_item_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+			android:layout_toRightOf="@+id/group_item_more_name"
+            android:singleLine="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/group_item_name"
+            style="@style/style_group_list_item_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/group_item_img"
+            android:layout_marginLeft="10.0dp"
+            android:layout_toRightOf="@+id/group_item_img"
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:id="@+id/group_item_creator_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/group_item_img"
+            android:layout_marginLeft="10.0dp"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/group_item_creator"
+                style="@style/style_group_list_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/style_group_list_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_group_create" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_item_create_date_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/group_item_img"
+            android:layout_marginLeft="10.0dp"
+            android:layout_alignBottom="@+id/group_item_img">
+
+            <TextView
+                android:id="@+id/group_item_create_date"
+                style="@style/style_group_list_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

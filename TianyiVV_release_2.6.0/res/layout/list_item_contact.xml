@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_yishitong_item_sel"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_listview_title"
+        android:minHeight="20.0dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/setting_itmes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!--
+              <QuickContactBadge
+            android:id="@+id/img_avatar"
+            android:layout_width="50.0dp"
+            android:layout_height="50.0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="10.0dp"
+            tools:ignore="ContentDescription" />
+        -->
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="50.0dp"
+            android:layout_height="50.0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="10.0dp"
+            android:src="@drawable/call_video_default_avatar"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/rl_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_right_arrow"
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_arr_right"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_right_arrow" />
+
+            <ImageView
+                android:id="@+id/img_add"
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_add"
+                android:background="@drawable/list_item_add"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dp"
+            android:layout_toRightOf="@+id/img_avatar"
+            tools:ignore="UselessLeaf" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--wwyue 让在线显示垂直居中  gravity="center_vertical"-->
+            <LinearLayout
+                android:id="@+id/ll_icon"
+                style="@style/setting_itmes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginTop="5.0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                tools:ignore="ContentDescription" >
+
+                <ImageView
+                    android:id="@+id/img_tianyi"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/list_icon_tianyi"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/img_weibo"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_icon_weibo"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+                <!-- wwyue  add 显示是否在线 -->
+
+                <TextView
+                    android:id="@+id/tv_contact_stas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="[在线]"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/contact_select_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/cb_contact"
+            android:gravity="center_vertical"
+            android:paddingRight="10dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

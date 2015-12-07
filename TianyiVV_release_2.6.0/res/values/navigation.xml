@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="NavigationView">
+		<attr name="left_width" format="dimension"></attr>
+		<attr name="right_width" format="dimension"></attr>
+		<attr name="left_drawable" format="reference"></attr>
+		<attr name="right_drawable" format="reference"></attr>
+		<attr name="navigation_size" format="integer"></attr>
+		<attr name="list_width" format="dimension"></attr>
+		<attr name="list_scale" format="dimension"></attr>
+	</declare-styleable>
+
+
+</resources>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg" >
+
+    <RelativeLayout
+        android:id="@+id/calling_layout_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/calling_layout_audio_bottom"
+        android:visibility="gone" >
+
+        <!-- 顶部 -->
+
+        <RelativeLayout
+            android:id="@+id/calling_layout_video_top"
+            android:layout_width="match_parent"
+            android:layout_height="40.0dp"
+            android:layout_alignParentTop="true" >
+
+            <Chronometer
+                android:id="@+id/chronometer_video"
+                style="@style/calling_invite_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dp"
+                android:text="chronometer" />
+
+            <RelativeLayout
+                android:id="@+id/rl_callrecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3.0dp"
+                android:layout_toRightOf="@+id/chronometer_video" >
+
+                <CheckBox
+                    android:id="@+id/btn_call_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_video"
+                    android:button="@null"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/calling_layout_top_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/calling_img_video_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_video" />
+
+                <TextView
+                    style="@style/calling_invite_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1.0dp"
+                    android:layout_toRightOf="@+id/calling_img_video_icon"
+                    android:text="@string/_calling" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_capturewnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1.0dp"
+                android:layout_toLeftOf="@+id/relativeLayout5" >
+
+                <Button
+                    android:id="@+id/btn_calling_video_capture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_capture_window"
+                    android:onClick="onCaptureWnd" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2.0dp"
+                android:clickable="true" >
+
+                <CheckBox
+                    android:id="@+id/cb_calling_video_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_convert_window"
+                    android:button="@null"
+                    android:checked="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 中部 -->
+        <!-- 对端 -->
+
+        <RelativeLayout
+            android:id="@+id/calling_layout_video_other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/calling_layout_video_top" >
+        </RelativeLayout>
+        <!-- 本地 -->
+
+        <RelativeLayout
+            android:id="@+id/calling_layout_video_our"
+            android:layout_width="100.0dp"
+            android:layout_height="100.0dp"
+            android:layout_alignLeft="@+id/calling_layout_video_other"
+            android:layout_alignTop="@+id/calling_layout_video_other" >
+        </RelativeLayout>
+        <!-- by cpl -->
+
+        <TextView
+            android:id="@+id/calling_layout_netstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/calling_layout_video_our"
+            android:text="网络不稳定"
+            android:textColor="#ff0000"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calling_layout_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/calling_center_bg"
+        android:visibility="visible"
+        tools:ignore="UselessLeaf" >
+
+        <LinearLayout
+            android:id="@+id/calling_center_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dp" >
+
+            <RelativeLayout
+                android:id="@+id/calling_center_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:ignore="UselessParent" >
+
+                <ImageView
+                    android:id="@+id/calling_img_head"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20.0dp"
+                    android:background="@drawable/call_video_default_avatar"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/calling_center_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/calling_txt_caller"
+                    style="@style/calling_caller_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dp"
+                    android:text="呼叫者" />
+
+                <Chronometer
+                    android:id="@+id/chronometer_audio"
+                    style="@style/calling_invite_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calling_txt_caller"
+                    android:layout_alignLeft="@+id/calling_txt_caller"
+                    android:layout_marginTop="10.0dp"
+                    android:text="chronometer"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/calling_img_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calling_center_layout_top"
+            android:background="@drawable/list_item_divide_line"
+            tools:ignore="ContentDescription" >
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40.0dp"
+            android:layout_below="@+id/calling_img_line" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                tools:ignore="UselessParent" >
+
+                <ImageView
+                    android:id="@+id/calling_img_type"
+                    android:layout_width="30.0dp"
+                    android:layout_height="30.0dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/call_type_audio"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/calling_txt_status"
+                    style="@style/calling_invite_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/calling_img_type"
+                    android:text="@string/_calling_invite" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/called_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        tools:ignore="Orientation,DisableBaselineAlignment,UselessParent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/calling_bottom_bg"
+            android:onClick="onAccept" >
+
+            <TextView
+                style="@style/calling_bottom_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/_calling_accept"
+                android:textColor="@color/calling_bottom_tv" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5.0dp"
+            android:layout_weight="1"
+            android:background="@color/calling_bottom_bg"
+            android:onClick="onRefused" >
+
+            <TextView
+                style="@style/calling_bottom_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/_calling_refused"
+                android:textColor="@color/calling_bottom_tv" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/caller_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/calling_bottom_bg"
+        android:onClick="onHangUp"
+        android:visibility="gone"
+        tools:ignore="Orientation,DisableBaselineAlignment,UselessParent" >
+
+        <TextView
+            style="@style/calling_bottom_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/_calling_end"
+            android:textColor="@color/calling_bottom_tv" />
+    </RelativeLayout>
+
+    <!--  -->
+
+    <RelativeLayout
+        android:id="@+id/calling_layout_audio_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_main"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/layout_calling_img_audio_mute"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/calling_bottom_bg"
+                android:onClick="onMute" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/calling_img_audio_mute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_mute" />
+
+                    <TextView
+                        android:id="@+id/calling_tv_audio_mute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dp"
+                        android:layout_toRightOf="@+id/calling_img_audio_mute"
+                        android:text="@string/_calling_mute"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_calling_img_audio_hangup"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5.0dp"
+                android:layout_weight="1"
+                android:background="@color/calling_bottom_bg"
+                android:onClick="onHangUp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/calling_img_audio_hangup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_hangup" />
+
+                    <TextView
+                        android:id="@+id/calling_tv_audio_hangup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dp"
+                        android:layout_toRightOf="@+id/calling_img_audio_hangup"
+                        android:text="@string/_calling_hangup"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_calling_img_audio_speaker"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5.0dp"
+                android:layout_weight="1"
+                android:background="@color/calling_bottom_bg"
+                android:onClick="onSpeaker" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/calling_img_audio_speaker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_speaker" />
+
+                    <TextView
+                        android:id="@+id/calling_tv_audio_speaker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5.0dp"
+                        android:layout_toRightOf="@+id/calling_img_audio_speaker"
+                        android:text="@string/_calling_speaker"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
