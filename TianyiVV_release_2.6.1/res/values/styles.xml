@@ -1,0 +1,146 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Main" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 请求Dialog样式 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置完全透明 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 设置屏幕变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="calling_video_button_text">
+       <!-- <item name="android:textColor">#ffffff</item>-->
+        <item name="android:textSize">14dp</item>
+    </style>
+    
+    <style name="calling_video_button">
+		<item name="android:background">@drawable/btn_call_video_button</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">71dp</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+    <style name="FloatDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/no_color</item>
+    </style>
+    
+    <!-- 设置界面列表字体样式 -->
+    <style name="setting_itmes_text">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <!-- 选择头像上传方式Dialog字体样式 -->
+    <style name="dialog_avatar_txt">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">#3b3b3b</item>
+    </style>
+    <style name="dialog_avatar_white_txt">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    
+    <!-- 选择头像上传方式动画效果 -->
+    <style name="animation" parent="android:Animation">
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!-- 退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    
+    <!-- 会话界面样式 -->
+    <style name="yishitong_search_txt">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="yishitong_drivder_line">
+        <item name="android:textColor">#C9C9C9</item>
+    </style>
+    <style name="yishitong_dispad_search">
+        <item name="android:textSize">20.0dp</item>
+        <item name="android:textColor">#42a7d6</item>
+    </style>
+    
+    <!-- 联系人详情 -->
+    <style name="contact_detail_name">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="contact_detail_list_item_txt">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <!-- 呼叫 -->
+    <style name="calling_caller_txt">
+        <item name="android:textSize">20.0dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="calling_invite_txt">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="calling_bottom_txt">
+        <item name="android:textSize">18.0dp</item>
+    </style>
+    
+    <style name="group_create_sel_members_add">
+        <item name="android:textSize">12.0dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="about_detail_bottom">
+        <item name="android:textSize">12.0dp</item>
+        <item name="android:textColor">#7d7b7b</item>
+    </style>
+    
+    <style name="style_group_create_members">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12.0dp</item>
+    </style>
+    
+    <style name="style_group_list_item_txt">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15.0dp</item>
+    </style>
+    
+    <style name="style_group_more_delete_all">
+        <item name="android:textSize">15.0dp</item>
+    </style>
+    
+    <style name="calling_vv_show_txt_1">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">@color/calling_bottom_bg_click</item>
+    </style>
+    
+    <style name="style_chronometer">
+        <item name="android:textColor">@color/calling_speaker_click</item>
+        <item name="android:textSize">15.0dp</item>
+    </style>
+    
+     <style name="style_about_version">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30.0px</item>
+    </style>
+    
+</resources>

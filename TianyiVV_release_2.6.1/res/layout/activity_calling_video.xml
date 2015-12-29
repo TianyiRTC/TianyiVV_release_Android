@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/call_video_bg"
+        android:onClick="onDrawer" >
+
+        <LinearLayout
+            android:id="@+id/calling_video_other_side_Sf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/video_connection_bg"
+            tools:ignore="Orientation"
+            android:scaleType="fitCenter" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/call_video_connection_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/video_connection_bg"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="134dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/call_video_connection_logo" />
+
+                <TextView
+                    android:id="@+id/calling_video_connection_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/call_video_connection_tip" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/calling_video_our_side_video_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/calling_video_our_side_Sf_layout"
+                android:layout_width="100dp"
+                android:layout_height="100dp" android:background="#ffffff">
+
+                <LinearLayout
+                    android:id="@+id/calling_video_our_side_Sf"
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    tools:ignore="Orientation"
+                    android:scaleType="fitCenter" android:layout_centerInParent="true">
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/call_video_ourside_bottom_bg"
+                android:padding="5dp" android:onClick="onOurSideShow">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/cb_call_video_arr"
+                    android:button="@null" android:clickable="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calling_video_avatar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <com.sip.rtcclient.ui.CallAnimationQuanLayout
+                android:id="@+id/callAnimationQuanLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp" >
+            </com.sip.rtcclient.ui.CallAnimationQuanLayout>
+
+            <LinearLayout
+                android:id="@+id/calling_video_name_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/audio_logo" />
+
+                <TextView
+                    android:id="@+id/calling_video_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:text="萌萌"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calling_video_time_top_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/call_video_top_bg_s"
+                android:padding="10dp" >
+
+                <Chronometer
+                    android:id="@+id/chronometer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Chronometer" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_call_video_top"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/btn_convert_window" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/call_video_calling_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="onDrawer"
+                    android:src="@drawable/btn_close_pad"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/calling_video_btn_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+
+                        <com.com.sip.rtcclient.ui.CallVideoButton                          android:id="@+id/calling_video_mute_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        
+                      <RelativeLayout
+                            android:id="@+id/linearLayout4"
+                            style="@style/calling_video_button"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical" >
+
+                                <CheckBox
+                                    android:id="@+id/calling_video_keyBoard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/call_video_keyboard_s"
+                                    android:button="@null" />
+                                <!-- 
+                                android:background="@drawable/btn_keyboard"
+                                 -->
+
+                                <TextView
+                                    android:id="@+id/TextView01"
+                                    style="@style/calling_video_button_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/keyboard"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <com.com.sip.rtcclient.ui.CallVideoButton                          android:id="@+id/calling_video_handsfree_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" >
+
+                        <com.com.sip.rtcclient.ui.CallVideoButton                          android:id="@+id/calling_video_hold_call_cb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:id="@+id/LinearLayout01"
+                            android:layout_width="71dp"
+                            android:layout_height="56dp"
+                            android:background="@drawable/call_video_button_unclick"
+                            android:clickable="false"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="onChangeMode"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical" >
+
+                                <CheckBox
+                                    android:id="@+id/calling_video_change_mode_cb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/call_voide_change_video_unclick"
+                                    android:button="@null"
+                                    android:checked="true"
+                                    android:clickable="false" />
+
+                                <TextView
+                                    android:id="@+id/calling_video_change_mode_tv"
+                                    style="@style/calling_video_button_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/to_video"
+                                    android:textColor="#6685a4" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/LinearLayout02"
+                            android:layout_width="71dp"
+                            android:layout_height="56dp"
+                            android:background="@drawable/call_video_button_unclick"
+                            android:clickable="false"
+                            android:onClick="onBlind"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:id="@+id/ImageView03"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:clickable="false"
+                                    android:src="@drawable/call_transfer_unclick" />
+
+                                <TextView
+                                    android:id="@+id/TextView04"
+                                    style="@style/calling_video_button_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/blind"
+                                    android:textColor="#6685a4" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <RelativeLayout
+		        android:id="@+id/dialpad_layout"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:visibility="gone" >
+		        <include
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            layout="@layout/dialpad_calling_video_layout" />
+	    	</RelativeLayout>
+
+            <Button
+                android:id="@+id/activity_calling_video_end_call_btn"
+                android:layout_width="232dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_handup"
+                android:onClick="onHangUp"
+                android:text="@string/btn_end_call"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calling_video_call_in_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_call_video_button"
+                    android:clickable="false"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="58dp"
+                    android:paddingRight="58dp"
+                    android:paddingTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/call_transfer_s" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="26dp"
+                        android:text="@string/call_transfer"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_calling_incall_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical" >
+
+                <com.sip.rtcclient.ui.SliderRelativeLayout
+                    android:id="@+id/slider_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/calling_dial_bg_f" >
+
+                    <!-- android:background="@drawable/calling_dial_bg_f" -->
+
+                    <TextView
+                        android:id="@+id/slider_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/incoming_slid_nor" />
+
+                    <ImageView
+                        android:id="@+id/accept_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/slider_icon"
+                        android:background="@anim/slid_accept_anim" />
+
+                    <ImageView
+                        android:id="@+id/reject_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/slider_icon"
+                        android:background="@anim/slid_reject_anim" />
+                </com.sip.rtcclient.ui.SliderRelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+</LinearLayout>

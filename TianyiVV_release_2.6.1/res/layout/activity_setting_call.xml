@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <com.sip.rtcclient.ui.TitleViewTianyi
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewTianyi>
+
+    <ScrollView
+        android:id="@+id/call_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount" >
+
+        <LinearLayout
+            android:id="@+id/call_linearlayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginTop="10.0dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/call_rel01"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="8.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_refuse_stanger" />
+
+                <CheckBox
+                    android:id="@+id/call_refuse_stranger_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_select_check"
+                    android:button="@null"
+                    android:checked="false"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            
+             <RelativeLayout
+                android:id="@+id/call_rel02"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="8.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_refuse_stanger_group" />
+
+                <CheckBox
+                    android:id="@+id/call_refuse_stranger_group_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_select_check"
+                    android:button="@null"
+                    android:checked="true"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            
+             <RelativeLayout
+                android:id="@+id/call_rel03"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="8.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_used_opengl" />
+
+                <CheckBox
+                    android:id="@+id/call_opengl_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_select_check"
+                    android:button="@null"
+                    android:checked="false"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            
+             <RelativeLayout
+                android:id="@+id/call_auto_accept"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="8.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_auto_accept" />
+
+                <CheckBox
+                    android:id="@+id/call_auto_accept_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_select_check"
+                    android:button="@null"
+                    android:checked="false"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            
+             <RelativeLayout
+                android:id="@+id/call_rel04"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="8.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    android:id="@+id/call_audio_title"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_audio_code" />
+
+                <Spinner
+                    android:id="@+id/call_spinner_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/call_audio_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ContentDescription" />
+                
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            
+             <RelativeLayout
+                android:id="@+id/call_rel05"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="8.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    android:id="@+id/call_video_title"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_video_code" />
+                
+                 <Spinner
+                    android:id="@+id/call_spinner_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/call_video_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+           		android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            
+             <RelativeLayout
+                android:id="@+id/call_videoformat"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="8.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginTop="5.0dp" >
+
+                <TextView
+                    android:id="@+id/call_video_titleformate"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_call_video_format" />
+                
+                 <Spinner
+                    android:id="@+id/call_spinner_videoformate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/call_video_titleformate"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_centerVertical="true"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

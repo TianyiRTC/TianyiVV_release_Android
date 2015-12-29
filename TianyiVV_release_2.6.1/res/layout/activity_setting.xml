@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <com.sip.rtcclient.ui.TitleViewSimple
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewSimple>
+
+    <ScrollView
+        android:id="@+id/setting_scrollview01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/setting_linearlayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="Orientation"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/setting_rel01"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="5.0dp"
+                android:onClick="onPerson" >
+
+                <ImageView
+                    android:id="@+id/setting_img_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/setting_person"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_toRightOf="@+id/setting_img_person"
+                    android:text="@string/_setting_person" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" >
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/setting_rel02"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="5.0dp"
+                android:onClick="onAddFriend" >
+
+                <ImageView
+                    android:id="@+id/setting_img_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/setting_add"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_toRightOf="@+id/setting_img_add"
+                    android:text="@string/_setting_add_friend" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/setting_rel03"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="5.0dp"
+                android:onClick="onCallSetting" >
+
+                <ImageView
+                    android:id="@+id/setting_img_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/setting_call"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_toRightOf="@+id/setting_img_call"
+                    android:text="@string/_setting_call" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+             <!--about -->
+            <RelativeLayout
+                android:id="@+id/setting_about"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="5.0dp"
+                android:onClick="onSettingAbout" >
+
+                <ImageView
+                    android:id="@+id/setting_img_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/setting_about"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_toRightOf="@+id/setting_img_about"
+                    android:text="@string/_setting_about" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            <!-- update -->
+
+            <RelativeLayout
+                android:id="@+id/setting_rel04"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="5.0dp"
+                android:onClick="onCheckUpdate" >
+
+                <ImageView
+                    android:id="@+id/setting_img_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/setting_update"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_toRightOf="@+id/setting_img_update"
+                    android:text="@string/_setting_check_update" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+            <!-- switch -->
+
+            <RelativeLayout
+                android:id="@+id/setting_rel05"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="5.0dp"
+                android:onClick="onSwitchSrtp" >
+
+                <ImageView
+                    android:id="@+id/setting_switch_srtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_tv_calling"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/text_switch_srtp"
+                    style="@style/setting_itmes_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dp"
+                    android:layout_toRightOf="@+id/setting_switch_srtp"
+                    android:text="@string/_setting_switch_srtp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@drawable/list_item_divide_line"
+                tools:ignore="ContentDescription" />
+                
+            <RelativeLayout
+                android:id="@+id/setting_rel06"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10.0dp">
+                
+                <View
+                    android:id="@+id/strut"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"/>
+                
+                <Button
+                    android:id="@+id/btn_upload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_horizontal"
+                    android:layout_alignRight="@id/strut"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10.0dp"
+                    android:layout_marginBottom="10dip"
+                    android:background="@drawable/btn_exit"
+                    android:onClick="upload"
+                    android:text="@string/_setting_upload"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    tools:ignore="SpUsage" />
+                
+                <Button
+                    android:id="@+id/btn_exit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_horizontal"
+                    android:layout_alignLeft="@id/strut"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10.0dp"
+                    android:layout_marginBottom="10dip"
+                    android:background="@drawable/btn_exit"
+                    android:onClick="onExit"
+                    android:text="@string/_calling_exit"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    tools:ignore="SpUsage" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+
+    </ScrollView>
+
+</LinearLayout>

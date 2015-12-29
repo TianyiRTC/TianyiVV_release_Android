@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:background="@color/bg_title" >
+
+        <ImageView
+            android:id="@+id/right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="onCall"
+            android:background="@drawable/icon_top_phone" />
+        
+        <ImageView
+            android:id="@+id/right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/right1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="onFriendAdd"
+            android:visibility="gone"
+            android:background="@drawable/icon_person_add" />
+        
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="@string/title_yishitong"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:layout_below="@+id/layout_title"
+        android:background="@color/black"
+        tools:ignore="ContentDescription" >
+    </ImageView>
+
+    <!--wwyue  visibility="gone" -->
+    <RelativeLayout
+        android:id="@+id/yishitong_rel01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:visibility="gone"
+        android:background="@color/bg_search_root" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_layout_bg_text"
+            android:paddingBottom="1dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="1dip" >
+            
+            <EditText
+	            android:id="@+id/yishitong_search_txt"
+	            style="@style/yishitong_search_txt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@null"
+	            android:layout_centerVertical="true"
+	            android:drawableLeft="@drawable/search_user_icon"
+	            android:hint="@string/_yishitong_search_txt"
+	            tools:ignore="TextFields" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yishitong_rel01">
+
+        <ListView
+            android:id="@+id/yishitong_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/yishitong_listview_divider"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false" >
+        </ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dialpad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-2dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/lightgray"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_record_dial_bg"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_call_record_delete"
+                android:longClickable="true" />
+
+            <EditText
+                android:id="@+id/et_dial"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10.0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10.0dp"
+                android:layout_toLeftOf="@+id/img_clear"
+                android:background="@null"
+                android:freezesText="true"
+                android:hint="@string/_yishitong_search_dispad_txt"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="#b2c5d5"
+                android:textColorHint="#b2c5d5"
+                android:textSize="20.0dp" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dialpad" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/dialpad_btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onAudio" >
+
+                    <ImageView
+                        android:id="@+id/dialpad_btn_audio_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/btn_dialpad_audio_call"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onVideo" >
+
+                    <ImageView
+                        android:id="@+id/dialpad_btn_video_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/btn_dialpad_video_call"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

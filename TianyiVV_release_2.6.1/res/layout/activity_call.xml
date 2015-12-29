@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="Orientation" >
+
+    <com.sip.rtcclient.widget.TitleViewSimple
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.widget.TitleViewSimple>
+
+    <ScrollView
+        android:id="@+id/activity_contact_scrllview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent" >
+
+        <RelativeLayout
+            android:id="@+id/activity_contact_rel_layout01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            tools:ignore="ScrollViewSize" >
+
+            <RelativeLayout
+                android:id="@+id/activity_contact_rel_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="1.0dp"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/activity_contact_tv_account"
+                    android:layout_width="50.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_activity_contact_tv_account" />
+
+                <EditText
+                    android:id="@+id/activity_contact_et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/activity_contact_tv_account"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_contact_rel_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_below="@+id/activity_contact_rel_account"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/activity_contact_tv_pw"
+                    android:layout_width="50.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_activity_contact_tv_pw" />
+
+                <EditText
+                    android:id="@+id/activity_contact_et_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/activity_contact_tv_pw"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_contact_rel_ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_below="@+id/activity_contact_rel_pw"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/activity_contact_tv_ip"
+                    android:layout_width="50.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_activity_contact_tv_ip" />
+
+                <EditText
+                    android:id="@+id/activity_contact_et_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/activity_contact_tv_ip"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_contact_rel_port"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_below="@+id/activity_contact_rel_ip"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/activity_contact_tv_port"
+                    android:layout_width="50.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_activity_contact_tv_port" />
+
+                <EditText
+                    android:id="@+id/activity_contact_et_port"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/activity_contact_tv_port"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_contact_rel_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50.0dp"
+                android:layout_marginTop="1dip"
+                android:layout_below="@+id/activity_contact_rel_port"
+                tools:ignore="UselessParent" >
+
+                <Button
+                    android:id="@+id/activity_contact_btn_call_login"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:onClick="onLogin"
+                    android:layout_marginLeft="20.0dp"
+                    android:textColor="#000000"
+                    android:layout_alignLeft="@+id/activity_contact_et_account"
+                    android:text="@string/_activity_contact_btn_call_login" />
+
+                <Button
+                    android:id="@+id/activity_contact_btn_call_exit"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:onClick="onExit"
+                    android:layout_marginLeft="30.0dp"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/activity_contact_btn_call_login"
+                    android:text="@string/_activity_contact_btn_call_exit" />
+            </RelativeLayout>
+
+            
+            <RelativeLayout
+                android:id="@+id/activity_contact_rel_callnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_below="@+id/activity_contact_rel_login"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/activity_contact_tv_call_num"
+                    android:layout_width="50.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_activity_contact_tv_call_num" />
+
+                <EditText
+                    android:id="@+id/activity_contact_et_call_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_toRightOf="@+id/activity_contact_tv_call_num"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    tools:ignore="TextFields" />
+            </RelativeLayout>
+
+             <RelativeLayout
+                android:id="@+id/activity_contact_rel_vframes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/activity_contact_rel_callnum"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/activity_contact_tv_call_frames"
+                    android:layout_width="50.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_activity_contact_tv_call_frames" />
+
+                <EditText
+                    android:id="@+id/activity_contact_et_call_frames"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:text="10"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/activity_contact_tv_call_frames"
+                    android:singleLine="true"
+                    tools:ignore="TextFields" />
+               
+                 <Button
+                    android:id="@+id/activity_contact_btnframes_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSaveFrames"
+                    android:layout_marginRight="10.0dp"
+                    android:layout_toRightOf="@+id/activity_contact_et_call_frames"
+                    android:text="@string/_activity_contact_btnframes_save"/>
+                                
+            </RelativeLayout>     
+            
+            <RelativeLayout
+                android:id="@+id/activity_contact_rel_vformat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="5dip"
+                android:layout_below="@+id/activity_contact_rel_vframes"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/activity_call_tv_vformat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_activity_contact_tv_call_vformat" />
+
+                <Spinner
+                    android:id="@+id/activity_contact_sp_vformat"
+                    android:layout_toRightOf="@+id/activity_call_tv_vformat"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:background="#D1D1D1"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+  
+                            
+                <RelativeLayout
+                android:id="@+id/activity_contact_rel_layout_audiocodec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="1dip"
+                android:layout_below="@+id/activity_contact_rel_vformat"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/activity_call_tv_audiocodec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_activity_contact_tv_audiocodec" />
+
+                <Spinner
+                    android:id="@+id/activity_contact_sp_audiocodec"
+                    android:layout_toRightOf="@+id/activity_call_tv_audiocodec"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:background="#D1D1D1"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+               <RelativeLayout
+                android:id="@+id/activity_contact_rel_layout_videocodec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="1dip"
+                android:layout_below="@+id/activity_contact_rel_layout_audiocodec"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/activity_call_tv_videocodec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/_activity_contact_tv_videocodec" />
+
+                <Spinner
+                    android:id="@+id/activity_contact_sp_videocodec"
+                    android:layout_toRightOf="@+id/activity_call_tv_videocodec"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:textColor="#000000"
+                    android:background="#D1D1D1"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+                
+            <RelativeLayout
+                android:id="@+id/activity_contact_rel_btncall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50.0dp"
+                android:layout_below="@+id/activity_contact_rel_layout_videocodec"
+                tools:ignore="UselessParent" >
+
+                <Button
+                    android:id="@+id/activity_contact_btn_call_audio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onAudio"
+                    android:layout_marginLeft="20.0dp"
+                    android:textColor="#000000"
+                    android:layout_alignLeft="@+id/activity_contact_et_account"
+                    android:text="@string/_activity_contact_btn_call_audio" />
+
+                <Button
+                    android:id="@+id/activity_contact_btn_call_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onVideo"
+                    android:layout_marginLeft="30.0dp"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/activity_contact_btn_call_audio"
+                    android:text="@string/_activity_contact_btn_call_video" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

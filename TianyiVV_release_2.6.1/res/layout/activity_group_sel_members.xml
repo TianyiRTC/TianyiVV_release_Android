@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <com.sip.rtcclient.ui.TitleViewTianyi
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewTianyi>
+
+    <RelativeLayout
+        android:id="@+id/group_create_sel_members_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleView"
+        android:layout_margin="10.0dp" >
+
+        <com.sip.rtcclient.ui.ShowAllItemGridView
+            android:id="@+id/group_create_sel_menber_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:horizontalSpacing="10.0dp"
+            android:listSelector="#00000000"
+            android:numColumns="4"
+            android:verticalSpacing="10.0dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl_group_create_selgrpvtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_create_sel_members_layout"
+        android:layout_margin="10.0dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_conftype"
+            style="@style/calling_bottom_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tv_conftype"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinner_conftype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dp"
+            android:layout_toRightOf="@+id/tv_conftype" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_create_sel_members_ok_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/calling_bottom_bg"
+        android:onClick="onCreateGroup"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/group_create_sel_members_ok_txt"
+                style="@style/calling_bottom_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_group_create_ok"
+                android:textColor="@color/calling_bottom_tv" />
+
+            <TextView
+                android:id="@+id/group_create_sel_members_count_txt"
+                style="@style/calling_bottom_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/group_create_sel_members_ok_txt"
+                android:textColor="@color/calling_bottom_tv" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

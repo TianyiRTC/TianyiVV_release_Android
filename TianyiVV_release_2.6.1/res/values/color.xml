@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="transparent">#00111111</color>
+    <color name="white">#ffffffff</color>
+    <color name="no_color">#00000000</color>
+    <color name="phone_book_background">#f6f6f6</color> 
+    <color name="layout_call_record_text">#606060</color>
+    <color name="call_record_dial_bg">#1b1b1b</color>
+    <color name="spinner_select_bg">#497aa0</color>
+    <color name="button_text_bg">#262626</color>
+    <color name="bg_title">#eaeaea</color>
+    <color name="bg_listview_title">#d0d0d0</color>
+    <color name="bg_search_root">#e0e0e0</color>
+    <color name="bg_search_line">#787878</color>
+    <color name="yishitong_listview_divider">#C9C9C9</color> 
+    <color name="contact_detail_top">#eaeaea</color> 
+    <color name="calling_center_bg">#e4e4e4</color> 
+    <color name="calling_bottom_bg">#2e2e2e</color>
+    <color name="calling_bottom_bg_click">#38a53c</color>
+    <color name="calling_mute_click">#787878</color>
+    <color name="calling_hangup_click">#ea230e</color>
+    <color name="calling_speaker_click">#00d400</color> 
+    <color name="contact_sel_bg">#ffe4f4fd</color>
+    <color name="gray">#808080</color>
+    <color name="lightgray">#D3D3D3</color>
+    <color name="bg_poup">#aa000000</color>
+    
+    <color name="bg_main">#efefef</color>
+    
+    <color name="tx_mute_checked">#787878</color>
+    <color name="tx_hangup_checked">#e6240f</color>
+    <color name="tx_speaker_checked">#00d200</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#FF0000</color>
+    <color name="gray2">#e9e8e7</color>
+    <color name="grey">#ff808080</color>
+    <color name="background">#f1f2f3</color>
+
+    <color name="background_color">#f1f2f3</color>
+    <color name="notify_bg_color">#c0000000</color>
+    
+    
+</resources>

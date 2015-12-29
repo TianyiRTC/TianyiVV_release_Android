@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <com.sip.rtcclient.ui.TitleViewTianyi
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewTianyi>
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleView"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:background="@color/bg_search_root" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_layout_bg_text"
+            android:paddingBottom="1dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="1dip" >
+
+            <EditText
+	            android:id="@+id/et_search"
+	            style="@style/yishitong_search_txt"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@null"
+	            android:layout_centerVertical="true"
+	            android:drawableLeft="@drawable/search_user_icon"
+	            android:hint="@string/_yishitong_search_txt"
+	            tools:ignore="TextFields" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/group_create_sel_members_ok_layout"
+        android:layout_below="@+id/rl_search">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/yishitong_listview_divider"
+            android:dividerHeight="1.0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/select_contact_none"
+        style="@style/setting_itmes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150.0dp"
+        android:text="@string/_group_create_sel_members_none"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/group_create_sel_members_ok_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/calling_bottom_bg"
+        android:onClick="onAddMembers"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/group_create_sel_members_ok_txt"
+                style="@style/calling_bottom_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_group_create_ok"
+                android:textColor="@color/calling_bottom_tv" />
+
+            <TextView
+                android:id="@+id/group_create_sel_members_count_txt"
+                style="@style/calling_bottom_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/group_create_sel_members_ok_txt"
+                android:textColor="@color/calling_bottom_tv" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

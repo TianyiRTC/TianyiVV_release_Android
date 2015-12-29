@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg"
+    android:orientation="vertical" >
+
+    <com.sip.rtcclient.ui.TitleViewTianyi
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.sip.rtcclient.ui.TitleViewTianyi>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 头部 -->
+
+        <RelativeLayout
+            android:id="@+id/about_layout_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50.0dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/about_img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/login_logo"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- 底部 -->
+
+        <RelativeLayout
+            android:id="@+id/about_layout_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_layout_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dp"
+            android:background="@drawable/about_bottom_bg"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/about_layout_bottom_sdk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10.0dp"
+                android:paddingRight="10.0dp"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/about_txt_sdk_version_"
+                    style="@style/style_about_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_sdk_version" />
+
+                <TextView
+                    android:id="@+id/about_txt_sdk_version"
+                    style="@style/style_about_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@+id/about_txt_sdk_version_" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/about_layout_bottom_vv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10.0dp"
+                android:paddingRight="10.0dp"
+                android:layout_marginTop="10.0dp"
+                android:layout_below="@+id/about_layout_bottom_sdk"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/about_txt_vv_version_"
+                    style="@style/style_about_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_vv_version" />
+
+                <TextView
+                    android:id="@+id/about_txt_vv_version"
+                    style="@style/style_about_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dp"
+                    android:layout_toRightOf="@+id/about_txt_vv_version_" />
+            </RelativeLayout>
+            
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/use_notes"
+            style="@style/style_about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210.0dp"
+            android:layout_marginLeft="5.0dp"
+            android:text="@string/about_use_notes" />
+
+    </RelativeLayout>
+
+</LinearLayout>
